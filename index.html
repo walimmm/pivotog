@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PIVOTCOG</title>
+    <!-- <link rel="icon" type="image/png" href=""> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,600&family=Roboto:ital,wght@0,300;0,500;1,100;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header starts -->
+
+    <div class="container-fluid px-0 bg-nav-pivotcog">
+        <header class="">
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-nav-pivotcog ">
+
+
+                <a class="navbar-brand" href="index.html">
+                    <span class="logo-text">PIVOTCOG</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" style="color: black;" class="h-6 w-6"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link header-menu-link mr-md-4 text-center" href="#">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-menu-link mr-md-4 text-center" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-menu-link mr-md-4 text-center" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-menu-link mr-md-4 text-center" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-menu-link mr-md-4 text-center" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-menu-link text-center" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+            <!-- navbar ends -->
+
+            <!-- banner -->
+
+            <div class="row">
+
+                <div class="col-md-7 col-sm-12">
+
+                    <div class="hero-container__first">
+                        <h1 class="text-black hero-heading animate__animated  animate__zoomInDown">
+                            Get ready to <span class="text-main"> DOUBLE</span><br> your salary
+                        </h1>
+                        <p class="hero-par animate__animated animate__fadeInLeft">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Tristique nisl suspendisse
+                            pharetra
+                            enim at duis nunc,<br> gravida.
+                        </p>
+
+                        <button type="button"
+                            class="btn btn-primary bg-main hero-btn animate__animated animate__fadeInLeft "
+                            data-toggle="modal" data-target="#uploadModal">
+                            Upload your resume
+                        </button>
+
+                        <!-- Modal starts -->
+
+                        <!-- Modal -->
+                        <div class="modal  fade" id="uploadModal" tabindex="-1" role="dialog"
+                            aria-labelledby="uploadModalLabel" aria-hidden="true">
+                            <div class="modal-dialog bg-white" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header ">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <h5 class="modal-title text-center text-black font-weight-bold"
+                                        id="uploadModalLabel">
+                                        Upload
+                                        Document</h5>
+                                    <div class="modal-body">
+                                        <input type="file" id="upload" style="display:none">
+                                        <label for="upload">
+
+
+
+                                            <div class="upload-container">
+                                                <div class="border-container">
+                                                    <div class="upload-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                                                            class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                            stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2"
+                                                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                                        </svg>
+                                                        <p>Upload resume</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <p class="small pl-2">Format pdf, doc, docx</p>
+
+                                        <div class="upload-info">
+                                            <span class="upload-name mr-3">My Resume.pdf</span>
+                                            <div class="upload-info__icons">
+                                                <span class="seen-upload mr-2" id="seen-upload">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="18px"
+                                                        class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                                    </svg>
+                                                </span>
+
+                                                <span class="delete-upload" id="delete-upload">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="18px"
+                                                        class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="text-center mb-5 pop-up">
+
+                                        <button type="button" id="upload-file"
+                                            class="btn btn-primary bg-main text-white">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal ends -->
+                    </div>
+                </div>
+
+                <div class="col-md-5 d-none d-md-block pr-0">
+                    <div class="hero-container__second animate__animated animate__fadeIn">
+                        <img src="assets/images/hero_second.png" alt="icon">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- banner ends -->
+
+
+        </header>
+    </div>
+    <!-- header ends -->
+
+    <!-- About section starts -->
+    <section class=" px-md-7 pt-5 pb-md-5 about">
+        <div class="container-fluid ">
+            <div class="text-center about-text px-lg-4">
+
+                <h2 class="px-lg-5" data-aos="fade-left">We leverage our vast tech experience and Artificial
+                    Intelligence to help you
+                    transition to a new
+                    career
+                    using your
+                    current skillset and experience. Get your personalized tech role recommendations in just hours!</h2>
+            </div>
+        </div>
+
+    </section>
+    <!-- About section ends -->
+
+    <!-- Services Section starts -->
+    <section class="p-5 services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col m-md-4 m-0">
+                    <h1 class="services-heading">Our Services</h1>
+                </div>
+            </div>
+
+
+            <div class="row my-5 services-content" data-aos="fade-down">
+
+                <img src="assets/images/spiral.png" class="services-img" alt="">
+
+                <div class="col-md-4 col-sm-12 text-left services-card">
+                    <img src="assets/images/resume 1.png" alt="">
+                    <h4 class="ml-1 mb-3">Profile Review</h4>
+                    <p>We scan your profile against multiple job boards to find matching skillsets in each job
+                        description.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-12 text-left services-card">
+                    <img src="assets/images/development 1.png" alt="">
+                    <h4 class="ml-1 mb-3">Career Recommendation</h4>
+                    <p>
+                        We review your resume and leverage your skillset to recommend tech career path
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-12 text-left services-card">
+                    <img src="assets/images/business-card 1.png" alt="">
+                    <h4 class="ml-1 mb-3">Revamp</h4>
+                    <p>
+                        We work with you to customize your resume for the career that best matches your profile
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-12 text-left services-card">
+                    <img src="assets/images/development 1.png" alt="">
+                    <h4 class="ml-1 mb-3">Training</h4>
+                    <p>
+                        We provide customized training materials to help bridge your gap for the recommendeed career
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-12 text-left services-card">
+                    <img src="assets/images/interview 1.png" alt="">
+                    <h4 class="ml-1 mb-3">Interview Prep</h4>
+                    <p>
+                        We help you ace your interviews by providing tips and questions to expect.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-12 text-left services-card">
+                    <img src="assets/images/handshake 1.png" alt="">
+                    <h4 class="ml-1 mb-3">Salary Negotiation</h4>
+                    <p>
+                        We help you negotiate the best salary package for you
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- services section ends -->
+
+    <!-- Services Banner starts -->
+    <section class=" px-md-7 pt-5 pb-md-5 services-banner">
+        <div class="container-fluid ">
+            <div class="text-center services-banner__text">
+
+                <h2 data-aos="fade-right">Get a six-figure salary in tech today leveraging skills that you already have
+                </h2>
+            </div>
+        </div>
+
+    </section>
+    <!-- Services Banner  ends -->
+
+    <!-- Pricing Starts -->
+    <section class="px-md-5 py-5 px-2 pricing" id="pricing">
+        <div class="container">
+            <div class="row ">
+                <div class="col m-md-4 m-0 text-center">
+                    <h1 class="pricing-heading">Ready to find a career in tech with PivotCog?</h1>
+                    <p class="pricing-subtitle">Choose the package that suits you</p>
+                </div>
+            </div>
+
+            <div class="row ">
+
+                <!-- Basic pricing starts -->
+
+                <div class="col-lg-4 pt-5">
+                    <div class="card basic-pricing__card basic relative">
+
+                        <div class="card-body mt-2 pb-0" data-aos="fade-down">
+                            <h5 class="pricing-title">Basic <br> Free</h5>
+                            <p class="pricing-card__subtitle">For individuals who want to know their options</p>
+
+
+                            <ul class="content text-left">
+                                <li class="pb-3 pt-3">Free Analysis</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="package-info text-center">
+
+                            <p class="more">+ See package benefits</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basic Pricing ends -->
+
+                <!-- pro pricing starts -->
+
+                <div class="col-lg-4 pt-5">
+                    <div class="card basic-pricing__card popular relative" data-aos="fade-up">
+                        <div class="card-heading p-4 border-bottom text-center">Popular</div>
+                        <div class="card-body mt-2 pb-0">
+                            <h5 class="pricing-title">Pro <br> &dollar; 345</h5>
+                            <p class="pricing-card__subtitle">For individuals who want an optimized resume to reflect
+                                the new career path</p>
+
+                            <ul class="content  text-left">
+                                <li class="pb-3 pt-3">Profile Analysis</li>
+                                <li class="pb-3 pt-3">Career Recommendation</li>
+                                <li class="pb-3 pt-3">Upskill Recommendation</li>
+                                <li class="pb-3 pt-3">Resume Editing</li>
+                                <li class="pb-3 pt-3">Turnaround time - 48 hours</li>
+                                <li class="pb-3 pt-3">Expedited - 24 hours - &dollar;159</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="package-info text-center">
+
+                            <p class="more">+ See package benefits</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pro pricing ends -->
+
+                <!-- premium pricing starts -->
+
+                <div class="col-lg-4 pt-5">
+                    <div class="card basic-pricing__card premium relative">
+
+                        <div class="card-body mt-2 pb-0" data-aos="fade-down">
+                            <h5 class="pricing-title">Premium <br> &dollar; 549</h5>
+                            <p class="pricing-card__subtitle">For individuals who want the complete package from
+                                consultation to career revamp and landing the dream job
+                            <ul class="content  text-left">
+                                <li class="pb-3 pt-3">Profile Analysis</li>
+                                <li class="pb-3 pt-3">Career Recommendation</li>
+                                <li class="pb-3 pt-3">Upskill Recommendation</li>
+                                <li class="pb-3 pt-3">Resume Editing</li>
+                                <li class="pb-3 pt-3">LinkedIn Profile Overhaul</li>
+                                <li class="pb-3 pt-3">Interview Prep</li>
+                                <li class="pb-3 pt-3">Salary Negotiation</li>
+                                <li class="pb-3 pt-3">Turnaround time - 72 hours</li>
+                                <li class="pb-3 pt-3">Expedited - 24 hours - &dollar;249</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="package-info text-center">
+
+                            <p class="more">+ See package benefits</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium pricing ends -->
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Pricing Ends -->
+
+    <!-- stories starts -->
+    <section class="p-5 stories relative" id="testimonial">
+        <div class="container">
+            <div class="row ">
+                <div class="col m-md-4 m-0 text-center">
+                    <h1 class="pricing-heading">PivotCog Stories</h1>
+                    <p class="stories-subtitle text-center">Stories from our clients who found their passion
+                        with PivotCog</p>
+                </div>
+            </div>
+
+
+            <div class="row my-5 stories-content relative">
+
+                <!-- <div class="card"> -->
+
+                <img src="assets/images/spiral.png" class="services-img" alt="">
+
+                <div class="col-md-6 col-sm-12 text-left ">
+
+
+
+                    <div class="stories-card" data-aos="fade-left">
+
+                        <img src="assets/images/profile-img1.png" height="70px" alt="">
+                        <div class="stories-content__personal">
+
+                            <h4 class="ml-1 mb-1 d-inline-block">John Smith</h4>
+                            <p class="mb-1 "> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg> <span class="stories-card__location"> Pennsylvania</span></p>
+                            <p class=" stories-card__subtitle">I got a six figure job that allow me <br> work because of
+                                you. Thank you.
+                            </p>
+                            <p class="stories-card__more">From Retail to Front-End</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- </div> -->
+
+                <div class="col-md-6 col-sm-12 text-left ">
+
+
+
+                    <div class="stories-card-left single-margin-last" data-aos="fade-right">
+
+                        <img src="assets/images/profile-img2.png" height="70px" alt="">
+                        <div class="stories-content__personal">
+                            <h4>Mary Lee </h4>
+                            <p class="mb-1"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg><span class="stories-card__location"> Pittburgh</span></p>
+                            <p class="stories-card__subtitle">I got a six figure job that allow me <br
+                                    class="stories-break"> work because of
+                                you. Thank you.
+                            </p>
+                            <p class="stories-card__more">From Retail to Front-End </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-12 text-left ">
+
+
+
+                    <div class="stories-card" data-aos="fade-left">
+
+                        <img src="assets/images/profile-img2.png" height="70px" alt="">
+                        <div class="stories-content__personal">
+
+                            <h4 class="ml-1 mb-1 d-inline-block">John Smith</h4>
+                            <p class="mb-1"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg><span class="stories-card__location"> Quebec</span></p>
+                            <p class="stories-card__subtitle">I got a six figure job that allow me <br> work because of
+                                you. Thank you.
+                            </p>
+                            <p class="stories-card__more">Accountant to Business<br>
+                                System Analyst</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-12 text-left ">
+
+
+
+                    <div class="stories-card-left single-margin-last" data-aos="fade-right">
+
+                        <img src="assets/images/profile-img1.png" height="70px" alt="">
+                        <div class="stories-content__personal">
+
+                            <h4 class="ml-1 mb-1 d-inline-block">John Smith</h4>
+                            <p class="mb-1"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg> <span class="stories-card__location"> Los Angeles</span></p>
+                            <p class="stories-card__subtitle">I got a six figure job that allow me <br
+                                    class="stories-break"> work because of
+                                you. Thank you.
+                            </p>
+                            <p class="stories-card__more">One year to Dev</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <img src="assets/images/testimonial.png" class="stories-img" alt="">
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- stories end -->
+    <!-- get started begins -->
+    <section class="p-5 bg-dark get-started">
+
+        <div class="container-fluid ">
+            <div class="text-center get-started__text px-lg-4" data-aos="zoom-in">
+
+                <h1 class="px-lg-5 text-white">Get Started!</h1>
+                <p>Your resume review is free</p>
+                <button type="button" id="submit-upload" class="btn btn-primary bg-white" data-toggle="modal"
+                    data-target="#uploadModal">Upload your resume
+                    now</button>
+            </div>
+        </div>
+    </section>
+    <!-- get started ends -->
+
+    <!-- footer starts -->
+    <footer class="bg-white px-5 pt-5 footer">
+        <div class="container-fluid">
+            <div class="row text-main py-4 footer-container" data-aos="fade-in">
+
+                <div class="col-lg-3 col-sm-6 text-center text-md-left p-md-0 p-sm-4">
+                    <h5 class="footer-companyname">PivotCog</h5>
+                    <p class="llc">&copy; PivotCog llc</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 ">
+                    <h5 class="footer-heading text-center pb-2">Services</h5>
+                    <p class="llc text-center">(555)-555-555</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 text-center text-md-left">
+                    <h5 class="footer-heading pb-2">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="pb-2">
+                            <a class="footer-subtitle">About Us</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="footer-subtitle">Payment Methods</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="footer-subtitle">FAQs</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="footer-subtitle">Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="footer-socials ">
+                        <ul class="list-unstyled">
+
+                            <li><a href="#">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="payment-footer">
+                        <div class="payment-logo">
+
+                            <img src="assets/images/secure-payments.png" height="50px" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
